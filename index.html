@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Non-Major Elective Registration</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-flex">
+      <div class="logo">
+        <div class="logo-box">NM</div>
+        <div>
+          <div class="logo-title">Non-Major Elective</div>
+          <div class="logo-sub">Subject Registration Portal</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#" id="navHome" class="active">Home</a>
+        <a href="#" id="navMy">My Registration</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Welcome to Elective Registration</h1>
+      <p>
+        Login using <b>Register Number</b> and <b>Date of Birth</b>.
+        Once confirmed, subjects cannot be changed.
+      </p>
+    </section>
+
+    <!-- LOGIN CARD -->
+    <section class="card" id="loginCard">
+      <h2>Student Login</h2>
+
+      <div class="grid2">
+        <div>
+          <label>Register Number</label>
+          <input id="regno" placeholder="Eg: 22UCS001"/>
+        </div>
+
+        <div>
+          <label>DOB (DD/MM/YYYY)</label>
+          <input id="dob" placeholder="Eg: 22/11/2003"/>
+        </div>
+      </div>
+
+      <button class="btn" id="btnLogin">Login</button>
+
+      <div class="msg" id="loginMsg"></div>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section class="card hidden" id="dashCard">
+      <div class="dash-top">
+        <div>
+          <h2 id="studentName">Student</h2>
+          <p class="muted" id="studentMeta">Dept | Shift</p>
+        </div>
+        <button class="btn-outline" id="btnLogout">Logout</button>
+      </div>
+
+      <!-- Already Registered -->
+      <div class="hidden" id="alreadyBox">
+        <h3>✅ You are already registered</h3>
+        <p class="muted">Your subjects are locked and cannot be edited.</p>
+        <div id="alreadySubjects" class="subject-list"></div>
+      </div>
+
+      <!-- New Registration -->
+      <div class="hidden" id="newBox">
+        <h3>🎯 Your 7 Random Subjects</h3>
+        <p class="muted">
+          These subjects are auto-selected based on your shift and department rules.
+        </p>
+
+        <div id="subjectCards" class="cards"></div>
+
+        <button class="btn" id="btnConfirm">Confirm Registration</button>
+        <div class="msg" id="saveMsg"></div>
+      </div>
+
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Non-Major Elective Portal | Powered by College</p>
+    </footer>
+
+  </main>
+
+<script src="app.js"></script>
+</body>
+</html>
