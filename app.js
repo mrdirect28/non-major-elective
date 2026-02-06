@@ -1,7 +1,7 @@
 // ============================
 // CONFIG - CHANGE THESE 2
 // ============================
-const API_URL = "https://script.google.com/macros/s/AKfycbzOXSC4VKcn7d0t9LjMgINHGhJhGhmsUF2y8OXsFeWM1KTXGR04PLbr-4_Zc0oX0ILz_g/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbwq5vQlru5tDSZA1fwKtQGI1mEj4LKahCLNXlkePYsSb0sFlpPjuIfjqEj1yQ0lu9qNGw/exec";
 const SECRET_KEY = "NME_2804";
 
 // ============================
